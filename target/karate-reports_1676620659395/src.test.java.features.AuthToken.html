@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.features.AuthToken</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-02-17 10:57:18 ÖÖ</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>get user details</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/features/AuthToken.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">GET API headers feature</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">get user details</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>769</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://gorest.co.in//public/v3/users/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.3">10:57:17.389 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = read(&#39;../../java/karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print tokenID = &#39;b313fe34e13def7856abc1b50c872a50260c0f3f0bcd568f9ca728ca2cd62b92&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">10:57:17.429 [print] b313fe34e13def7856abc1b50c872a50260c0f3f0bcd568f9ca728ca2cd62b92 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#ustteki kisim karate-config.js den olmasi lazim normalde</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Authorization = &#39;Bearer &#39;+tokenID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;424183&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">754</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">10:57:17.638 request:
+1 &gt; GET https://gorest.co.in/public/v3/users/424183
+1 &gt; Authorization: Bearer b313fe34e13def7856abc1b50c872a50260c0f3f0bcd568f9ca728ca2cd62b92
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:57:18.188 response time in milliseconds: 541
+1 &lt; 404
+1 &lt; Date: Fri, 17 Feb 2023 07:57:14 GMT
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: no-cache
+1 &lt; feature-policy: camera &#39;none&#39;; gyroscope &#39;none&#39;; microphone &#39;none&#39;; usb &#39;none&#39;; fullscreen &#39;self&#39;
+1 &lt; link: &lt;/assets/application-5ca2d39683f754eb409149234dbb8e0fd5364629e20b610408f7dee5d88ec3ad.css&gt;; rel=preload; as=style; nopush
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-request-id: ae7b6332-ab4b-4841-8cb7-a740ff0db8cd
+1 &lt; x-runtime: 0.012067
+1 &lt; x-xss-protection: 0
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=V6W1rquSaeCnIPq6S84RXrKu6qThrCSgosidbJeduF453mVNs4xK0qD8YwnIHg4lG2tgmm0DYgjr8RZEt73j15qGWDHOLguLpSuBMpOOH4xmQoLScyIAWj8SSfXQvLY%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 79acf89419f62342-IST
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+1 &lt; Set-Cookie: _gorest_session=k6Kdf3m893QwXvZhMS5iEJC942DtREj4gbYxP7%2Bt1W%2FzehGEcycli0k4aouoOHHKvlB7XZwYGPZ%2FvJFkak9k%2BYT7lgM40f0M0GiDU%2F7Gfr4nWdympJPjUTgX4YHOJWki4V0O5uPP6BBiZieKlHpUHsfrRRGxSRh%2F32iMNblNzJA5FTsBo8559x6Rl8FA80f4SpK%2BxkjeL0LWB8C4XyJ0zrSLMxW9vQd3zJIvgK6Db%2Bn%2Fl%2FwoiaVSDoPn%2FbUXLaJfuZLV0QTqda6J8A%2FCfcOZoLVP0bpy%2BAg%3D--CXUODmZLePRrfqeb--vdTGrJwlKtZjwTLaJ%2BdcOw%3D%3D; Domain=gorest.co.in
+&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;meta content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot; name=&quot;viewport&quot; /&gt;&lt;link href=&quot;/favicon.ico&quot; rel=&quot;icon&quot; type=&quot;image/x-icon&quot; /&gt;&lt;title&gt;Page Not Found | GO REST&lt;/title&gt;&lt;meta name=&quot;csrf-param&quot; content=&quot;authenticity_token&quot; /&gt;
+&lt;meta name=&quot;csrf-token&quot; content=&quot;7cEI5mlNJ_vPqPlAsAfOjies3agRIQ0q9PcrWOyDp4AYWgdOImTQiX0hL-4gsw5l0seI_Ded9dK-mbgIyvMy5Q&quot; /&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/application-5ca2d39683f754eb409149234dbb8e0fd5364629e20b610408f7dee5d88ec3ad.css&quot; media=&quot;all&quot; data-turbolinks-track=&quot;reload&quot; /&gt;&lt;script src=&quot;/packs/js/application-3d361c652948a6caa881.js&quot; data-turbolinks-track=&quot;reload&quot; defer=&quot;defer&quot;&gt;&lt;/script&gt;&lt;script async=&quot;true&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4930099895671899&quot;&gt;&lt;/script&gt;&lt;script async=&quot;true&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=G-7KR6VNWHWS&quot;&gt;&lt;/script&gt;&lt;script&gt;window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag(&#39;js&#39;, new Date());gtag(&#39;config&#39;, &#39;G-7KR6VNWHWS&#39;);&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-dark sticky-top&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;&lt;i class=&quot;fas fa-exchange-alt&quot;&gt;&lt;/i&gt; Go REST&lt;/a&gt;&lt;button aria-controls=&quot;AppNavBar&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot; class=&quot;navbar-toggler&quot; data-bs-target=&quot;#AppNavBar&quot; data-bs-toggle=&quot;collapse&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&lt;/button&gt;&lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;AppNavBar&quot;&gt;&lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/chandamama-stories&quot;&gt;&lt;i class=&quot;fas fa-cloud-moon&quot;&gt;&lt;/i&gt; Chandamama Stories&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/qa&quot;&gt;&lt;i class=&quot;fas fa-life-ring&quot;&gt;&lt;/i&gt; Help&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/rest-console&quot;&gt;&lt;i class=&quot;fab fa-linux&quot;&gt;&lt;/i&gt; Rest Console&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item dropdown&quot;&gt;&lt;a aria-expanded=&quot;false&quot; class=&quot;nav-link dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; href=&quot;#&quot; id=&quot;ToolsDropDown&quot; role=&quot;button&quot;&gt;&lt;i class=&quot;fas fa-tools&quot;&gt;&lt;/i&gt; Tools&lt;/a&gt;&lt;ul aria-labelledby=&quot;ToolsDropDown&quot; class=&quot;dropdown-menu&quot;&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/base64-encode-decode&quot;&gt;Base64 Encode/Decode&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/url-encode-decode&quot;&gt;Url Encode/Decode&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/gcode-translator&quot;&gt;G-Code Translator&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/consumer/login&quot;&gt;Login&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;&lt;div class=&quot;container pt-3&quot;&gt;&lt;style type=&quot;text/css&quot;&gt;.code-text code {color: #bdbdbd;display: block;}.code-text code b {color: #81a2be;font-weight: 900;}.code-text code em {color: #b294bb;font-style: unset;}.code-text code i {color: #b5bd68;}.code-text code span {color: #f0c674;}&lt;/style&gt;&lt;div class=&quot;card text-white border-secondary bg-dark&quot;&gt;&lt;div class=&quot;card-header&quot;&gt;&lt;h1 class=&quot;card-title text-warning&quot;&gt;&lt;i class=&quot;fas fa-ghost text-white slide-right&quot;&gt;&lt;/i&gt; HTTP: Not Found &lt;/h1&gt;&lt;/div&gt;&lt;div class=&quot;card-body&quot;&gt;&lt;h3 class=&quot;leaad code-text&quot;&gt;&lt;code class=&quot;mb-3&quot;&gt;&lt;span&gt;this_page&lt;/span&gt;.&lt;em&gt;not_found&lt;/em&gt; = true&lt;/code&gt;&lt;/h3&gt;&lt;p class=&quot;lead code-text&quot;&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;if&lt;/span&gt; &lt;b&gt;you_spelt_it_wrong&lt;/b&gt; &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;span&gt;try_again&lt;/span&gt;&lt;br /&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;elsif &lt;b&gt;we_screwed_up&lt;/b&gt;&lt;/span&gt; &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;em&gt;print&lt;/em&gt; &lt;i&gt;&quot;We&#39;re really sorry about that.&quot;&lt;/i&gt;&lt;br /&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;end&lt;/span&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;redirect_to&lt;/span&gt; &lt;em&gt;home_page&lt;/em&gt;&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;hr class=&quot;mt-5&quot; /&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;footer&quot;&gt;&lt;ul class=&quot;list-inline&quot;&gt;&lt;li class=&quot;list-inline-item&quot;&gt;&amp;copy; Go Rest 2023&lt;/li&gt;&lt;li class=&quot;list-inline-item float-lg-end&quot;&gt;&lt;a href=&quot;/privacy-policy&quot;&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;list-inline-item float-lg-end me-3&quot;&gt;&lt;a href=&quot;/contact-us&quot;&gt;Contact Us&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref failed">12</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">10:57:18.191 src/test/java/features/AuthToken.feature:12
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 541, url: https://gorest.co.in/public/v3/users/424183, response: 
+&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;meta content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot; name=&quot;viewport&quot; /&gt;&lt;link href=&quot;/favicon.ico&quot; rel=&quot;icon&quot; type=&quot;image/x-icon&quot; /&gt;&lt;title&gt;Page Not Found | GO REST&lt;/title&gt;&lt;meta name=&quot;csrf-param&quot; content=&quot;authenticity_token&quot; /&gt;
+&lt;meta name=&quot;csrf-token&quot; content=&quot;7cEI5mlNJ_vPqPlAsAfOjies3agRIQ0q9PcrWOyDp4AYWgdOImTQiX0hL-4gsw5l0seI_Ded9dK-mbgIyvMy5Q&quot; /&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/application-5ca2d39683f754eb409149234dbb8e0fd5364629e20b610408f7dee5d88ec3ad.css&quot; media=&quot;all&quot; data-turbolinks-track=&quot;reload&quot; /&gt;&lt;script src=&quot;/packs/js/application-3d361c652948a6caa881.js&quot; data-turbolinks-track=&quot;reload&quot; defer=&quot;defer&quot;&gt;&lt;/script&gt;&lt;script async=&quot;true&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4930099895671899&quot;&gt;&lt;/script&gt;&lt;script async=&quot;true&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=G-7KR6VNWHWS&quot;&gt;&lt;/script&gt;&lt;script&gt;window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag(&#39;js&#39;, new Date());gtag(&#39;config&#39;, &#39;G-7KR6VNWHWS&#39;);&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-dark sticky-top&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;&lt;i class=&quot;fas fa-exchange-alt&quot;&gt;&lt;/i&gt; Go REST&lt;/a&gt;&lt;button aria-controls=&quot;AppNavBar&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot; class=&quot;navbar-toggler&quot; data-bs-target=&quot;#AppNavBar&quot; data-bs-toggle=&quot;collapse&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&lt;/button&gt;&lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;AppNavBar&quot;&gt;&lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/chandamama-stories&quot;&gt;&lt;i class=&quot;fas fa-cloud-moon&quot;&gt;&lt;/i&gt; Chandamama Stories&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/qa&quot;&gt;&lt;i class=&quot;fas fa-life-ring&quot;&gt;&lt;/i&gt; Help&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/rest-console&quot;&gt;&lt;i class=&quot;fab fa-linux&quot;&gt;&lt;/i&gt; Rest Console&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item dropdown&quot;&gt;&lt;a aria-expanded=&quot;false&quot; class=&quot;nav-link dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; href=&quot;#&quot; id=&quot;ToolsDropDown&quot; role=&quot;button&quot;&gt;&lt;i class=&quot;fas fa-tools&quot;&gt;&lt;/i&gt; Tools&lt;/a&gt;&lt;ul aria-labelledby=&quot;ToolsDropDown&quot; class=&quot;dropdown-menu&quot;&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/base64-encode-decode&quot;&gt;Base64 Encode/Decode&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/url-encode-decode&quot;&gt;Url Encode/Decode&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/gcode-translator&quot;&gt;G-Code Translator&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/consumer/login&quot;&gt;Login&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;&lt;div class=&quot;container pt-3&quot;&gt;&lt;style type=&quot;text/css&quot;&gt;.code-text code {color: #bdbdbd;display: block;}.code-text code b {color: #81a2be;font-weight: 900;}.code-text code em {color: #b294bb;font-style: unset;}.code-text code i {color: #b5bd68;}.code-text code span {color: #f0c674;}&lt;/style&gt;&lt;div class=&quot;card text-white border-secondary bg-dark&quot;&gt;&lt;div class=&quot;card-header&quot;&gt;&lt;h1 class=&quot;card-title text-warning&quot;&gt;&lt;i class=&quot;fas fa-ghost text-white slide-right&quot;&gt;&lt;/i&gt; HTTP: Not Found &lt;/h1&gt;&lt;/div&gt;&lt;div class=&quot;card-body&quot;&gt;&lt;h3 class=&quot;leaad code-text&quot;&gt;&lt;code class=&quot;mb-3&quot;&gt;&lt;span&gt;this_page&lt;/span&gt;.&lt;em&gt;not_found&lt;/em&gt; = true&lt;/code&gt;&lt;/h3&gt;&lt;p class=&quot;lead code-text&quot;&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;if&lt;/span&gt; &lt;b&gt;you_spelt_it_wrong&lt;/b&gt; &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;span&gt;try_again&lt;/span&gt;&lt;br /&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;elsif &lt;b&gt;we_screwed_up&lt;/b&gt;&lt;/span&gt; &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;em&gt;print&lt;/em&gt; &lt;i&gt;&quot;We&#39;re really sorry about that.&quot;&lt;/i&gt;&lt;br /&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;end&lt;/span&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;redirect_to&lt;/span&gt; &lt;em&gt;home_page&lt;/em&gt;&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;hr class=&quot;mt-5&quot; /&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;footer&quot;&gt;&lt;ul class=&quot;list-inline&quot;&gt;&lt;li class=&quot;list-inline-item&quot;&gt;&amp;copy; Go Rest 2023&lt;/li&gt;&lt;li class=&quot;list-inline-item float-lg-end&quot;&gt;&lt;a href=&quot;/privacy-policy&quot;&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;list-inline-item float-lg-end me-3&quot;&gt;&lt;a href=&quot;/contact-us&quot;&gt;Contact Us&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+src/test/java/features/AuthToken.feature:12
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
