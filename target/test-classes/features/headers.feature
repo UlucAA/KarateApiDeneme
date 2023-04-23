@@ -1,4 +1,4 @@
-#TODO bu class olmadi yarim kaldi 5.video naveen....
+
 Feature: GET API headers feature
   Background:
     * url 'https://gorest.co.in/public/v2/users'
@@ -9,13 +9,13 @@ Feature: GET API headers feature
     And header Accept-Encoding = 'gzip, deflate, br'
     And header User-Agent = 'Apache-HttpClient/4.5.12 (Java/11.0.16.1)'
     And header Authorization = 'Bearer f9a6125f6ea4617'
-   And path '409186'
+   And path '482216'
     When method GET
     Then status 200
     * print response
   Scenario: pass the user request with headers_Part2
     * def request_headers =
-    And path '408182'
+    And path '482216'
     When method GET
     Then status 200
     * print response

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.features.postapi_SchoolManagement_us15</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-04-23 03:09:44 ÖS</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:23]"><span>[1:23]</span> <span>Create a user with the given data</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/features/postapi_SchoolManagement_us15.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Create user using post api</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:23]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:23]</span>
+                <span class="scenario-name">Create a user with the given data</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1033</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:23]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://school-management-v1.herokuapp.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.3">15:09:43.354 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestPayload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">26</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.4">{
+  &quot;advisorTeacherId&quot;: &quot;116&quot;,
+  &quot;birthDay&quot;: &quot;2011-05-30&quot;,
+  &quot;birthPlace&quot;: &quot;South Babyfort&quot;,
+  &quot;email&quot;: &quot;Perryl741@yahoo.com&quot;,
+  &quot;fatherName&quot;: &quot;Brady&quot;,
+  &quot;gender&quot;: &quot;MALE&quot;,
+  &quot;motherName&quot;: &quot;Alysa&quot;,
+  &quot;name&quot;: &quot;Brendonn&quot;,
+  &quot;password&quot;: &quot;Jacob123&quot;,
+  &quot;phoneNumber&quot;: &quot;741-919-9532&quot;,
+  &quot;ssn&quot;: &quot;741-91-9532&quot;,
+  &quot;studentNumber&quot;: &quot;1031&quot;,
+  &quot;surname&quot;: &quot;paul&quot;,
+  &quot;username&quot;: &quot;emmamaxx&quot;
+ }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/students/save&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestPayload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDdWaWNlRGVhbiIsImlhdCI6MTY4MjI1MDExMiwiZXhwIjoxNjgyMjU4NzUyfQ.FLXIm1QhGLzCcsVmzdmZDHAIu43gWhmDVduG0HzkkHqUOxYFu-lLquFfko0v9m4nqMvWVNPW6K2_t9OWC7BoYw&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">996</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.27">15:09:43.597 request:
+1 &gt; POST https://school-management-v1.herokuapp.com/students/save
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDdWaWNlRGVhbiIsImlhdCI6MTY4MjI1MDExMiwiZXhwIjoxNjgyMjU4NzUyfQ.FLXIm1QhGLzCcsVmzdmZDHAIu43gWhmDVduG0HzkkHqUOxYFu-lLquFfko0v9m4nqMvWVNPW6K2_t9OWC7BoYw
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 319
+1 &gt; Host: school-management-v1.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;advisorTeacherId&quot;:&quot;116&quot;,&quot;birthDay&quot;:&quot;2011-05-30&quot;,&quot;birthPlace&quot;:&quot;South Babyfort&quot;,&quot;email&quot;:&quot;Perryl741@yahoo.com&quot;,&quot;fatherName&quot;:&quot;Brady&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;motherName&quot;:&quot;Alysa&quot;,&quot;name&quot;:&quot;Brendonn&quot;,&quot;password&quot;:&quot;Jacob123&quot;,&quot;phoneNumber&quot;:&quot;741-919-9532&quot;,&quot;ssn&quot;:&quot;741-91-9532&quot;,&quot;studentNumber&quot;:&quot;1031&quot;,&quot;surname&quot;:&quot;paul&quot;,&quot;username&quot;:&quot;emmamaxx&quot;}
+
+15:09:44.404 response time in milliseconds: 806
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Xss-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Sun, 23 Apr 2023 12:09:44 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;object&quot;:{&quot;userId&quot;:1411,&quot;username&quot;:&quot;emmamaxx&quot;,&quot;name&quot;:&quot;Brendonn&quot;,&quot;surname&quot;:&quot;paul&quot;,&quot;birthDay&quot;:&quot;2011-05-30&quot;,&quot;birthPlace&quot;:&quot;South Babyfort&quot;,&quot;phoneNumber&quot;:&quot;741-919-9532&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;studentNumber&quot;:2351,&quot;motherName&quot;:&quot;Alysa&quot;,&quot;fatherName&quot;:&quot;Brady&quot;,&quot;email&quot;:&quot;Perryl741@yahoo.com&quot;,&quot;active&quot;:true},&quot;message&quot;:&quot;Student saved Successfully&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref failed">29</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match $.object.name == &#39;Brendan&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.29">15:09:44.411 src/test/java/features/postapi_SchoolManagement_us15.feature:29
+And match $.object.name == &#39;Brendan&#39;
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  &#39;Brendonn&#39;
+  &#39;Brendan&#39;
+
+src/test/java/features/postapi_SchoolManagement_us15.feature:29
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref skipped">30</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match $.object.surname == &#39;Jacobi&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

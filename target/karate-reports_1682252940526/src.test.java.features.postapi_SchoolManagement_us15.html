@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.features.postapi_SchoolManagement_us15</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-04-23 03:28:15 ÖS</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:34]"><span>[1:34]</span> <span>Create a user with the given data</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/features/postapi_SchoolManagement_us15.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Create user using post api</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:34]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:34]</span>
+                <span class="scenario-name">Create a user with the given data</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1055</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:34]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://school-management-v1.herokuapp.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">15:28:14.329 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def faker = new com.github.javafaker.Faker()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">24</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def phonenumber =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.6">function generatePhoneNumber() {
+  const firstPart = Math.floor(Math.random() * 900) + 100;
+  const secondPart = Math.floor(Math.random() * 900) + 100;
+  const thirdPart = Math.floor(Math.random() * 10000);
+  return `${firstPart}-${secondPart}-${thirdPart.toString().padStart(4, &#39;0&#39;)}`;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestPayload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">161</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.15">{
+  &quot;advisorTeacherId&quot;: &quot;116&quot;,
+  &quot;birthDay&quot;: &quot;2011-05-30&quot;,
+  &quot;birthPlace&quot;: &quot;#(faker.address().city())&quot;,
+  &quot;email&quot;: &quot;#(faker.internet().emailAddress())&quot;,
+  &quot;fatherName&quot;: &quot;#(faker.name().firstName())&quot;,
+  &quot;gender&quot;: &quot;MALE&quot;,
+  &quot;motherName&quot;: &quot;#(faker.name().firstName())&quot;,
+  &quot;name&quot;: &quot;#(faker.name().firstName())&quot;,
+  &quot;password&quot;: &quot;#(faker.internet().password())&quot;,
+  &quot;phoneNumber&quot;: &quot;#(phoneNumber)&quot;,
+  &quot;ssn&quot;: &quot;#(faker.idNumber().ssnValid())&quot;,
+  &quot;studentNumber&quot;: &quot;#(faker.number().digits(4))&quot;,
+  &quot;surname&quot;: &quot;#(faker.name().lastName())&quot;,
+  &quot;username&quot;: &quot;#(faker.name().username())&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/students/save&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestPayload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDdWaWNlRGVhbiIsImlhdCI6MTY4MjI1MDExMiwiZXhwIjoxNjgyMjU4NzUyfQ.FLXIm1QhGLzCcsVmzdmZDHAIu43gWhmDVduG0HzkkHqUOxYFu-lLquFfko0v9m4nqMvWVNPW6K2_t9OWC7BoYw&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">858</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.38">15:28:14.746 request:
+1 &gt; POST https://school-management-v1.herokuapp.com/students/save
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDdWaWNlRGVhbiIsImlhdCI6MTY4MjI1MDExMiwiZXhwIjoxNjgyMjU4NzUyfQ.FLXIm1QhGLzCcsVmzdmZDHAIu43gWhmDVduG0HzkkHqUOxYFu-lLquFfko0v9m4nqMvWVNPW6K2_t9OWC7BoYw
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 332
+1 &gt; Host: school-management-v1.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;advisorTeacherId&quot;:&quot;116&quot;,&quot;birthDay&quot;:&quot;2011-05-30&quot;,&quot;birthPlace&quot;:&quot;East Elanor&quot;,&quot;email&quot;:&quot;orpha.johnson@hotmail.com&quot;,&quot;fatherName&quot;:&quot;Karima&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;motherName&quot;:&quot;Shery&quot;,&quot;name&quot;:&quot;Debi&quot;,&quot;password&quot;:&quot;4ej5hdkek0&quot;,&quot;phoneNumber&quot;:&quot;#(phoneNumber)&quot;,&quot;ssn&quot;:&quot;109-83-6317&quot;,&quot;studentNumber&quot;:&quot;0070&quot;,&quot;surname&quot;:&quot;Lindgren&quot;,&quot;username&quot;:&quot;forest.senger&quot;}
+
+15:28:15.407 response time in milliseconds: 660
+1 &lt; 400
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Xss-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Sun, 23 Apr 2023 12:28:15 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;message&quot;:&quot;Validation failed for object=&#39;studentRequest&#39;. Error count: 2&quot;,&quot;statusCode&quot;:400,&quot;path&quot;:&quot;/students/save&quot;,&quot;timeStamp&quot;:1682252895601,&quot;validations&quot;:{&quot;phoneNumber&quot;:&quot;Phone number should be exact 12 characters&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref failed">39</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.39">15:28:15.408 src/test/java/features/postapi_SchoolManagement_us15.feature:39
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 660, url: https://school-management-v1.herokuapp.com/students/save, response: 
+{&quot;message&quot;:&quot;Validation failed for object=&#39;studentRequest&#39;. Error count: 2&quot;,&quot;statusCode&quot;:400,&quot;path&quot;:&quot;/students/save&quot;,&quot;timeStamp&quot;:1682252895601,&quot;validations&quot;:{&quot;phoneNumber&quot;:&quot;Phone number should be exact 12 characters&quot;}}
+src/test/java/features/postapi_SchoolManagement_us15.feature:39
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref skipped">40</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match $.object.phoneNumber == &#39;xxx-xxx-xxxx&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

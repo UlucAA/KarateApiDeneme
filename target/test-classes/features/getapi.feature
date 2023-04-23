@@ -1,12 +1,12 @@
 Feature: GET API feature
   Background:
-    * url 'https://gorest.co.in/public/v2/users'
+    * url 'https://gorest.co.in/public/v2/users/'
   Scenario: get user details
-    And path '425535'
+    And path '427794'
     When method GET
     Then status 200
     And print response
-    * assert response.id == 425535
+    * assert response.id == 427794
     * print response
     * def jsonResponse = response
     * print jsonResponse
@@ -16,9 +16,9 @@ Feature: GET API feature
    * print actName
    * print actId
    * print actEmail
-    * match actName == 'Preity Khan IV'
-    * match actId == 425535
-    * match actEmail == 'preity_iv_khan@runte.io'
+    * match actName == 'Agnivesh Devar IV'
+    * match actId == 427794
+    * match actEmail == 'agnivesh_iv_devar@bernhard.name'
 
   Scenario: get user details - "message": "Resource not found"
 #    Given url 'https://gorest.co.in/public/v2/users'
